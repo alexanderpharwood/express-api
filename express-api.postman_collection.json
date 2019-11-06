@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "fb46af23-3afd-4b18-bc08-97a6516c91e4",
+		"name": "express-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"title\": \"Moby Dick\",\n\"slug\": \"moby-dick\",\n\"author\": \"Herman Melville\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"title\": \"Pale Fire\",\n\"slug\": \"pale-fire\",\n\"author\": \"Vladimir Nabokov\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/books/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/books/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/books/{id}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"books",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

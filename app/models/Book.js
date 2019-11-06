@@ -18,8 +18,7 @@ const Book = new mongoose.Schema(
 );
 
 Book.methods.toJson = function() {
-	var obj = this.toObject();
-	return obj;
+	return this.toObject();
 }
 
 module.exports = mongoose.model('Book', Book);
